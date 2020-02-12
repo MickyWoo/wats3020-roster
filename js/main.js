@@ -1,12 +1,5 @@
 /* JS for WATS 3020 Roster Project */
 
-///////////////////////////////////////////////////
-//////// TODOs ///////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
-// Fill in the blanks below to complete each TODO task.                       //
-////////////////////////////////////////////////////////////////////////////////
-
-
 
 
 class Person {
@@ -17,8 +10,6 @@ class Person {
     }
 
 }
-
-
 
 class Student extends Person {
     constructor(name, email) {
@@ -51,7 +42,7 @@ class Teacher extends Person {
     }
 }
 
-// TODO: Set up our Course class so we can run the whole roster from it.
+
 class Course {
     constructor(courseCode, courseTitle, courseDescription) {
         this.code = courseCode;
