@@ -47,7 +47,7 @@ class Teacher extends Person {
     constructor(name, email, honorific) {
         super(name, email);
 
-        this.horrific = honorific;
+        this.honorific = honorific;
     }
 }
 
@@ -86,10 +86,10 @@ class Course {
     markAttendance(username, status = "present") {
         let foundStudent = this.findStudent(username); // still in course , this was confusing to follow
         if (status == "present") {
-            foundStudent.attendance[1]; // attendance array and push value 1 
+            foundStudent.attendance.push(1); // attendance array and push value 1 
 
         } else {
-            foundStudent.attendance.push[0];
+            foundStudent.attendance.push(0);
         }
         updateRoster(this);
 
@@ -110,11 +110,11 @@ class Course {
     }
 }
 
-let courseCode = prompt("Enter course code");
+let courseCode = prompt("Enter course code", "3020");
 
-let courseTitle = prompt("enter course title ");
+let courseTitle = prompt("enter course title ", "wats");
 
-let courseDescription = prompt("enter course description");
+let courseDescription = prompt("enter course description", "web dev");
 
 let myCourse = new Course(courseCode, courseTitle, courseDescription);
 
