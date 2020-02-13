@@ -6,7 +6,8 @@ class Person {
     constructor(name, email) {
         this.name = name;
         this.email = email;
-        this.username = email.split('@')[0]; //split ability to split at Specific identifyer 
+        this.username = (name + email.split('@')[0]);
+        //this.username = email.split('@')[0]; //split ability to split at Specific identifyer 
     }
 
 }
